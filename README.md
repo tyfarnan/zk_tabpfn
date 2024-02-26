@@ -1,8 +1,13 @@
-# MNIST Example Template
+# Towards Scalable ZKML "training" via Prior Fitted Networks
 
-Welcome to the Giza Actions SDK template! The [Giza Actions SDK](https://actions.gizatech.xyz/welcome/giza-actions-sdk) is tailored to assist you in designing your ZKML workflows efficiently. This project provides pre-configured actions ready for deployment on the Giza platform. The purpose of this template is to demonstrate how to construct your ZKML workflows using the Giza Actions SDK.
+### What if we could prove what training data was used to make predictions, in the same way we prove inference?
 
-*Note: This template is based on the [MNIST tutorial](https://actions.gizatech.xyz/tutorials/build-a-verifiable-neural-network-with-giza-actions). Please be aware that certain steps, such as transpiling the model and deploying the generated model on Giza Plateform, are required between action executions. For a more comprehensive understanding, refer to the tutorial.*
+*Note: This project worked from the Giza's [MNIST tutorial](https://actions.gizatech.xyz/tutorials/build-a-verifiable-neural-network-with-giza-actions). Please be aware that certain steps, such as transpiling the model and deploying the generated model on Giza Plateform, are required between action executions. For a more comprehensive understanding, refer to the tutorial.*
+
+## Overview
+Within the `zk_tabpfn` directory, the [TabPFN REPO](https://github.com/automl/TabPFN/tree/main) has been ported in :
+- `transformer_prediction_interface.py`: Has been slightly modified to work with Giza Actions.
+- `giza_tabpfn_demo.ipynb`: Contains end-end example using Giza Actions and Giza Model to perform perform end-end supervised classification on a tabular datset from OpenML.
 
 ## Requirements
 - Python 3.11
@@ -14,20 +19,6 @@ $ poetry shell
 $ poetry install
 ```
 
-## Structure
-Within the `zk_tabpfn` directory, you'll discover multiple generated files:
-- `train_action.py`: Contains actions for training your model.
-- `predict_onnx_action.py`: Includes actions for making predictions with an ONNX model.
-- `predict_cairo_action.py`: Includes actions for making verifiable predictions with the Orion Cairo model.
-
-## Usage
-To use this project, follow these steps:
-1. Install the required dependencies.
-2. Execute any of the provided action scripts using the command `python zk_tabpfn/{action_file}.py`, for example, `python zk_tabpfn/{train_action}.py`.
-
 ## Learn More
 Explore more about the Giza Actions SDK [here](https://actions.gizatech.xyz/welcome/giza-actions-sdk).
-
-## Acknowledgement
-This template was generated using cookiecutter.
 
