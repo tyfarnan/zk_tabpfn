@@ -7,7 +7,7 @@
 ## Overview
 Within the `zk_tabpfn` directory, the [TabPFN REPO](https://github.com/automl/TabPFN/tree/main) has been ported in :
 - `transformer_prediction_interface.py`: Has been slightly modified to work with Giza Actions.
-- `giza_tabpfn_demo.ipynb`: Contains end-end example using Giza Actions and Giza Model to perform perform end-end supervised classification on a tabular datset from OpenML.
+- [giza_tabpfn_demo.ipynb](https://github.com/tyfarnan/zk_tabpfn/blob/main/zk_tabpfn/TabPFN/tabpfn/giza_tabfn_demo.ipynb): Contains end-end example using Giza Actions and Giza Model to perform perform end-end supervised classification on a tabular datset from OpenML.
 
 ## Requirements
 - Python 3.11
