@@ -11,9 +11,15 @@ Within the `zk_tabpfn` directory, the [TabPFN REPO](https://github.com/automl/Ta
 
 ## Requirements
 - Python 3.11
-- Poetry
+- Env manager 
+- Conda, Pip (or Poetry)
 
 ## Get Started
+```bash
+$ conda activate env
+$ pip install -e .
+```
+or with poetry
 ```bash
 $ poetry shell
 $ poetry install
